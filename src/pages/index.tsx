@@ -1,8 +1,8 @@
-import Head from 'next/head'
-import { DevForm } from '../components/DevForm'
-import { DevItem } from '../components/DevItem'
+import Head from "next/head";
 
-import styles from '../styles/pages/Home.module.scss'
+import { DevForm } from "../components/DevForm";
+import { DevItem } from "../components/DevItem";
+import styles from "../styles/pages/Home.module.scss";
 
 export default function Home() {
   return (
@@ -14,19 +14,19 @@ export default function Home() {
       </Head>
 
       <main className={styles.mainContainer}>
-          <aside>
-            <strong>Cadastrar</strong>
-            <DevForm />
-          </aside>
+        <aside>
+          <strong>Cadastrar</strong>
+          <DevForm />
+        </aside>
 
-          <main>
-            <ul>
-              <DevItem />
-              <DevItem />
-              <DevItem />
-            </ul>
-          </main>
+        <main>
+          <ul>
+            <DevItem />
+            <DevItem />
+            <DevItem />
+          </ul>
+        </main>
       </main>
     </div>
-  )
+  );
 }

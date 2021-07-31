@@ -9,10 +9,12 @@
 
   > aside {
     width: 320px;
-    background: #FFF;
+    background: #fff;
     box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.02);
     border-radius: 2px;
     padding: 30px 20px;
+
+    box-shadow: var(--panel-shadow);
 
     strong {
       font-size: 20px;
@@ -33,9 +35,7 @@
       list-style: none;
 
       @media (max-width: 650px) {
-
-          grid-template-columns: 1fr;
-
+        grid-template-columns: 1fr;
       }
     }
   }
